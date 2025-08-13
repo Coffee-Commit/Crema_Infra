@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/coffee-frontend:latest
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/coffee-frontend:cc3ad63
         ports:
         - containerPort: 3000
