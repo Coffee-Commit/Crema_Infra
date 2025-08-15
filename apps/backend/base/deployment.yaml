@@ -17,3 +17,28 @@ spec:
         image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:ddb792d
         ports:
         - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: crema-app-config
+        - secretRef:
+            name: crema-app-secret
+
+      - name: cloud-sql-proxy
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
+        args:
+          - "--structured-logs"
+          - "coffee-and-commit:asia-northeast3:goorm"
+        securityContext:
+          runAsNonRoot: true
+        volumeMounts:
+        - name: gcp-sa-key
+          mountPath: /secrets/gcp
+          readOnly: true
+        env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: /secrets/gcp/key.json
+
+      volumes:
+        - name: gcp-sa-key
+          secret:
+            secretName: gcp-cloudsql-credentials
