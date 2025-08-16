@@ -25,9 +25,9 @@ spec:
 
       - name: cloud-sql-proxy
         image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
-        args:
-          - "--structured-logs"
-          - "-ip_address_types=PRIVATE"
+        command:
+          - "/cloud_sql_proxy"
+          - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
         securityContext:
           runAsNonRoot: true
