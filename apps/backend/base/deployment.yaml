@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:91403a4
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:ddb792d
         ports:
         - containerPort: 8080
         envFrom:
@@ -24,7 +24,7 @@ spec:
             name: crema-app-secret
 
       - name: cloud-sql-proxy
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:91403a4
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:ddb792d
         args:
           - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
