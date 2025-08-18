@@ -28,8 +28,6 @@ spec:
         args:
           - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
-        securityContext:
-          runAsNonRoot: true
         volumeMounts:
         - name: gcp-sa-key
           mountPath: /secrets/gcp
