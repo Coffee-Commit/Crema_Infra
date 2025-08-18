@@ -17,3 +17,6 @@ spec:
         image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-frontend:a56cda5
         ports:
         - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: crema-app-config
