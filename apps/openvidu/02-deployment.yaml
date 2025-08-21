@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openvidu-server
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: openvidu-server
+  template:
+    metadata:
+      labels:
+        app: openvidu-server
+    spec:
+      containers:
+        - name: openvidu-server
+          image: openvidu/openvidu-server-kms:2.30.0
+          ports:
+            - containerPort: 4443
+              name: https
+          env:
+            - name: OPENVIDU_DOMAIN_OR_PUBLIC_IP
+              value: "openvidu-coffeechat.kro.kr"
+            - name: OPENVIDU_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: openvidu-secret
+                  key: OPENVIDU_SECRET
+            - name: CERTIFICATE_TYPE
+              value: "letsencrypt"
+            - name: LETSENCRYPT_EMAIL
+              value: "tnehd83@naver.com"
+            - name: KMS_MIN_PORT
+              value: "40000"
+            - name: KMS_MAX_PORT
+              value: "40100"
+            - name: OPENVIDU_RECORDING
+              value: "true"
+            - name: OPENVIDU_RECORDING_PATH
+              value: /opt/openvidu-recordings
+          volumeMounts:
+            - name: openvidu-data
+              mountPath: /opt/openvidu
+            - name: openvidu-recordings
+              mountPath: /opt/openvidu-recordings
+      volumes:
+        - name: openvidu-data
+          persistentVolumeClaim:
+            claimName: openvidu-data
+        - name: openvidu-recordings
+          persistentVolumeClaim:
+            claimName: openvidu-recordings
