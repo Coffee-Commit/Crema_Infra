@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: openvidu-server
-          image: openvidu/openvidu-server:2.30.0
+          image: openvidu/openvidu-server-kms:2.23.0
           ports:
             - containerPort: 4443
               name: https
@@ -34,7 +34,7 @@ spec:
               value: "40000"
             - name: KMS_MAX_PORT
               value: "40100"
-            - name: OPENVIDU_RECORDING
+            - name: OPENVIDU_RECORDINGxw
               value: "true"
             - name: OPENVIDU_RECORDING_PATH
               value: /opt/openvidu-recordings
