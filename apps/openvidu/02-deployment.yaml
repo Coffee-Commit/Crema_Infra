@@ -29,7 +29,7 @@ spec:
                   name: openvidu-secret
                   key: OPENVIDU_SECRET
             - name: CERTIFICATE_TYPE
-              value: "none"
+              value: "selfsigned"
             - name: KMS_MIN_PORT
               value: "40000"
             - name: KMS_MAX_PORT
