@@ -11,6 +11,6 @@
 - **CI/CD**: `Jenkins` / `ArgoCD`
 
 ### 아키텍처 다이어그램
-![Architecture Diagram](https://via.placeholder.com/800x400.png?text=Architecture+Diagram+Here)
+![Architecture Diagram](https://github.com/user-attachments/assets/e65e427f-cfc5-4e4d-8b65-e8a818f2e9a0)
 - 아직 만들고 있습니다!
 ---
