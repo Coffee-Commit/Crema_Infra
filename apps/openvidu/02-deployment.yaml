@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: openvidu-server
-          image: openvidu/openvidu-server-kms:2.30.0
+          image: openvidu/openvidu-server:2.30.0
           ports:
             - containerPort: 4443
               name: https
