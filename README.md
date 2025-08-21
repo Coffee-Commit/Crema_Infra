@@ -10,6 +10,6 @@
 - **Orchestration**: `Kubernetes`
 - **CI/CD**: `Jenkins` / `ArgoCD`
 
-### 아키텍처 다이어그램
+### 아키텍처 다이어그램 (완성본 아님 - 지속 수정 중)
 ![Architecture Diagram](https://github.com/user-attachments/assets/e65e427f-cfc5-4e4d-8b65-e8a818f2e9a0)
 ---
