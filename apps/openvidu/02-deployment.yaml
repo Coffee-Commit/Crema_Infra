@@ -39,14 +39,15 @@ spec:
             - name: OPENVIDU_RECORDING_PATH
               value: /opt/openvidu-recordings
           volumeMounts:
-            - name: openvidu-data
-              mountPath: /opt/openvidu
+            - name: docker-sock
+              mountPath: /var/run/docker.sock
             - name: openvidu-recordings
               mountPath: /opt/openvidu-recordings
       volumes:
-        - name: openvidu-data
-          persistentVolumeClaim:
-            claimName: openvidu-data
+        - name: docker-sock
+          hostPath:
+            path: /var/run/docker.sock
+            type: Socket
         - name: openvidu-recordings
           persistentVolumeClaim:
             claimName: openvidu-recordings
