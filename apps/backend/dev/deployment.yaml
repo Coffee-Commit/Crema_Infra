@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-dev
+  template:
+    metadata:
+      labels:
+        app: backend-dev
+    spec:
+      containers:
+      - name: backend-dev
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend-dev:7f5689f
+        ports:
+        - containerPort: 8080
+        envFrom:
+        - configMapRef:
+            name: crema-app-config
+        - secretRef:
+            name: crema-app-secret
+
+      - name: cloud-sql-proxy
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
+        args:
+          - "--private-ip"
+          - "coffee-and-commit:asia-northeast3:goorm"
+        volumeMounts:
+        - name: gcp-sa-key
+          mountPath: /secrets/gcp
+          readOnly: true
+        env:
+          - name: GOOGLE_APPLICATION_CREDENTIALS
+            value: /secrets/gcp/key.json
+
+      volumes:
+        - name: gcp-sa-key
+          secret:
+            secretName: gcp-cloudsql-credentials

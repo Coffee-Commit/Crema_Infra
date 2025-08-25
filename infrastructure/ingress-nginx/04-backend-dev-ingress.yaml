@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-dev-ingress
+  namespace: default
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "dev-api-coffeechat.kro.kr"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-dev-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - dev-api-coffeechat.kro.kr
+    secretName: backend-tls-cert
