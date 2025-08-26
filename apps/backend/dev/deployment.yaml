@@ -19,9 +19,9 @@ spec:
         - containerPort: 8080
         envFrom:
         - configMapRef:
-            name: crema-app-config
+            name: crema-app-dev-config
         - secretRef:
-            name: crema-app-secret
+            name: crema-app-dev-secret
 
       - name: cloud-sql-proxy
         image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
