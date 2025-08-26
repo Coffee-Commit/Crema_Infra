@@ -21,4 +21,4 @@ spec:
   tls:
   - hosts:
     - dev-api-coffeechat.kro.kr
-    secretName: backend-tls-cert
+    secretName: backend-dev-tls-cert
