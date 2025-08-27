@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: backend-dev
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend-dev:58b9de2
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend-dev:f2c1a41
         ports:
         - containerPort: 8080
         envFrom:
