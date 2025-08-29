@@ -7,8 +7,6 @@ spec:
   strategy:
     type: RollingUpdate
   selector:
-    nodeSelector:
-      disktype: video-processing
     matchLabels:
       app: openvidu-server
   template:
@@ -16,6 +14,8 @@ spec:
       labels:
         app: openvidu-server
     spec:
+      nodeSelector:
+        disktype: video-processing
       containers:
         - name: openvidu-server
           image: openvidu/openvidu-server-kms:2.23.0
