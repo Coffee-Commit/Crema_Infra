@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: crema-app-dev-config
+data:
+  GOOGLE_CLIENT_ID: 86053040483-0kqfneo0t5l14k7rgacvofdhd0e74njv.apps.googleusercontent.com
+  KAKAO_CLIENT_ID: cbfaa12498130dcf414c1333b151e37c
+  AWS_S3_BUCKET: crema-coffee
+  AWS_REGION: ap-northeast-2
+  FRONTEND_URL: https://coffeechat.kro.kr/
+  COOKIE_DOMAIN: .coffeechat.kro.kr
+  SPRING_PROFILES_ACTIVE: dev
