@@ -21,4 +21,4 @@ spec:
         - containerPort: 3000
         envFrom:
         - configMapRef:
-            name: crema-app-config
+            name: crema-app-front-config
