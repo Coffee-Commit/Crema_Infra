@@ -10,3 +10,5 @@ data:
   FRONTEND_URL: https://coffeechat.kro.kr/
   COOKIE_DOMAIN: .coffeechat.kro.kr
   SPRING_PROFILES_ACTIVE: dev
+  SPRING_DATA_REDIS_HOST: localhost
+  SPRING_DATA_REDIS_PORT: 6379
