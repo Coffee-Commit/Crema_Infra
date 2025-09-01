@@ -39,6 +39,9 @@ spec:
               mountPath: /var/run/docker.sock
             - name: openvidu-recordings
               mountPath: /openvidu/recordings
+            - name: openvidu-env-file
+              mountPath: /.env
+              subPath: .env
       volumes:
         - name: docker-sock
           hostPath:
@@ -47,3 +50,6 @@ spec:
         - name: openvidu-recordings
           persistentVolumeClaim:
             claimName: openvidu-recordings
+        - name: openvidu-env-file
+          configMap:
+            name: openvidu-env-config
