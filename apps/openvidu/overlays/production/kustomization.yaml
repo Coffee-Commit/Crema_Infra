@@ -4,4 +4,4 @@ kind: Kustomization
 resources:
 - ../../base
 - sealed-secret.yaml
-- openvidu-env-config.yaml
+- configmap.yaml
