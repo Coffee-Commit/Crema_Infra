@@ -5,9 +5,9 @@ metadata:
 data:
   AWS_S3_BUCKET: crema-coffee
   AWS_REGION: ap-northeast-2
-  FRONTEND_URL: http://localhost:3000
-  COOKIE_DOMAIN: .coffeechat.kro.kr
   SPRING_PROFILES_ACTIVE: dev
   SPRING_DATA_REDIS_HOST: localhost
   SPRING_DATA_REDIS_PORT: '6379'
-  COOKIE_SAMESITE: 'None'
+  FRONTEND_URL: http://localhost:3000
+  COOKIE_DOMAIN: .coffeechat.kro.kr
+  COOKIE_SAMESITE: None

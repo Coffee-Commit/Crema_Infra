@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: crema-app-front-config
 data:
-  NEXT_PUBLIC_API_URL: https://dev-api-coffeechat.kro.kr
+  NEXT_PUBLIC_API_URL: https://api-coffeechat.kro.kr
