@@ -10,7 +10,15 @@ spec:
     - name: openvidu-https
       protocol: TCP
       port: 443
-      targetPort: 5443 
+      targetPort: 5443
+    - name: coturn-udp
+      port: 3478
+      targetPort: 3478
+      protocol: UDP
+    - name: coturn-tcp
+      port: 3478
+      targetPort: 3478
+      protocol: TCP 
     - name: kms-40000
       port: 40000
       targetPort: 40000
