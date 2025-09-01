@@ -4,7 +4,7 @@ metadata:
   name: openvidu-ingress
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   ingressClassName: nginx
   tls:
@@ -21,4 +21,4 @@ spec:
               service:
                 name: openvidu-server-internal
                 port:
-                  number: 443
+                  number: 5443
