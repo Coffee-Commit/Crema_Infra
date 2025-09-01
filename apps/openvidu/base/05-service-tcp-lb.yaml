@@ -10,7 +10,7 @@ spec:
     - name: openvidu-https
       protocol: TCP
       port: 443
-      targetPort: 5443
+      targetPort: 443
     - name: coturn-tcp
       protocol: TCP
       port: 3478
