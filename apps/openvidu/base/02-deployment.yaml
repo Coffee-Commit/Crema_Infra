@@ -20,28 +20,18 @@ spec:
         - name: openvidu-server
           image: openvidu/openvidu-server-kms:2.23.0
           ports:
-            - containerPort: 4443
+            - containerPort: 5443
               name: https
+          envFrom:
+            - secretRef:
+                name: openvidu-env-secret
+            - configMapRef:
+                name: openvidu-env-config
           env:
-            - name: LOGGING_LEVEL_IO_OPENVIDU_SERVER
-              value: "WARN"
-            - name: OPENVIDU_DOMAIN_OR_PUBLIC_IP
-              value: "openvidu-coffeechat.kro.kr"
-            - name: OPENVIDU_SECRET
+            - name: COTURN_RELAY_IP
               valueFrom:
-                secretKeyRef:
-                  name: openvidu-secret
-                  key: OPENVIDU_SECRET
-            - name: CERTIFICATE_TYPE
-              value: "selfsigned"
-            - name: KMS_MIN_PORT
-              value: "40000"
-            - name: KMS_MAX_PORT
-              value: "40100"
-            - name: OPENVIDU_RECORDING
-              value: "true"
-            - name: OPENVIDU_RECORDING_PATH
-              value: /opt/openvidu-recordings
+                fieldRef:
+                  fieldPath: status.hostIP
           volumeMounts:
             - name: docker-sock
               mountPath: /var/run/docker.sock
