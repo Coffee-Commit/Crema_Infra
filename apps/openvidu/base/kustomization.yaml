@@ -4,5 +4,4 @@ resources:
   - 01-persistent-volume-claims.yaml
   - 02-deployment.yaml
   - 03-service-clusterip.yaml
-  - 05-service-tcp-lb.yaml
   - 06-service-udp-lb.yaml
