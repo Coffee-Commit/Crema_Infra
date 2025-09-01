@@ -9,5 +9,5 @@ spec:
   ports:
     - name: https
       protocol: TCP
-      port: 4443
-      targetPort: 4443
+      port: 5443
+      targetPort: 5443
