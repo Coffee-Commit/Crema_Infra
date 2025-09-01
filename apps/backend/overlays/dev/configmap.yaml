@@ -8,6 +8,6 @@ data:
   SPRING_PROFILES_ACTIVE: dev
   SPRING_DATA_REDIS_HOST: localhost
   SPRING_DATA_REDIS_PORT: '6379'
-  FRONTEND_URL: http://coffeechat.kro.kr:3000
+  FRONTEND_URL: https://coffeechat.kro.kr
   COOKIE_DOMAIN: .coffeechat.kro.kr
   COOKIE_SAMESITE: None
