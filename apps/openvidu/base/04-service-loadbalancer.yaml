@@ -7,6 +7,10 @@ spec:
   selector:
     app: openvidu-server
   ports:
+    - name: openvidu-https
+      protocol: TCP
+      port: 443
+      targetPort: 5443 
     - name: kms-40000
       port: 40000
       targetPort: 40000
