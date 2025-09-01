@@ -1,425 +1,425 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: openvidu-server-loadbalancer
-spec:
-  type: LoadBalancer
-  selector:
-    app: openvidu-server
-  ports:
-    - name: openvidu-https
-      protocol: TCP
-      port: 443
-      targetPort: 5443
-    - name: coturn-udp
-      port: 3478
-      targetPort: 3478
-      protocol: UDP
-    - name: coturn-tcp
-      port: 3478
-      targetPort: 3478
-      protocol: TCP 
-    - name: kms-40000
-      port: 40000
-      targetPort: 40000
-      protocol: UDP
-    - name: kms-40001
-      port: 40001
-      targetPort: 40001
-      protocol: UDP
-    - name: kms-40002
-      port: 40002
-      targetPort: 40002
-      protocol: UDP
-    - name: kms-40003
-      port: 40003
-      targetPort: 40003
-      protocol: UDP
-    - name: kms-40004
-      port: 40004
-      targetPort: 40004
-      protocol: UDP
-    - name: kms-40005
-      port: 40005
-      targetPort: 40005
-      protocol: UDP
-    - name: kms-40006
-      port: 40006
-      targetPort: 40006
-      protocol: UDP
-    - name: kms-40007
-      port: 40007
-      targetPort: 40007
-      protocol: UDP
-    - name: kms-40008
-      port: 40008
-      targetPort: 40008
-      protocol: UDP
-    - name: kms-40009
-      port: 40009
-      targetPort: 40009
-      protocol: UDP
-    - name: kms-40010
-      port: 40010
-      targetPort: 40010
-      protocol: UDP
-    - name: kms-40011
-      port: 40011
-      targetPort: 40011
-      protocol: UDP
-    - name: kms-40012
-      port: 40012
-      targetPort: 40012
-      protocol: UDP
-    - name: kms-40013
-      port: 40013
-      targetPort: 40013
-      protocol: UDP
-    - name: kms-40014
-      port: 40014
-      targetPort: 40014
-      protocol: UDP
-    - name: kms-40015
-      port: 40015
-      targetPort: 40015
-      protocol: UDP
-    - name: kms-40016
-      port: 40016
-      targetPort: 40016
-      protocol: UDP
-    - name: kms-40017
-      port: 40017
-      targetPort: 40017
-      protocol: UDP
-    - name: kms-40018
-      port: 40018
-      targetPort: 40018
-      protocol: UDP
-    - name: kms-40019
-      port: 40019
-      targetPort: 40019
-      protocol: UDP
-    - name: kms-40020
-      port: 40020
-      targetPort: 40020
-      protocol: UDP
-    - name: kms-40021
-      port: 40021
-      targetPort: 40021
-      protocol: UDP
-    - name: kms-40022
-      port: 40022
-      targetPort: 40022
-      protocol: UDP
-    - name: kms-40023
-      port: 40023
-      targetPort: 40023
-      protocol: UDP
-    - name: kms-40024
-      port: 40024
-      targetPort: 40024
-      protocol: UDP
-    - name: kms-40025
-      port: 40025
-      targetPort: 40025
-      protocol: UDP
-    - name: kms-40026
-      port: 40026
-      targetPort: 40026
-      protocol: UDP
-    - name: kms-40027
-      port: 40027
-      targetPort: 40027
-      protocol: UDP
-    - name: kms-40028
-      port: 40028
-      targetPort: 40028
-      protocol: UDP
-    - name: kms-40029
-      port: 40029
-      targetPort: 40029
-      protocol: UDP
-    - name: kms-40030
-      port: 40030
-      targetPort: 40030
-      protocol: UDP
-    - name: kms-40031
-      port: 40031
-      targetPort: 40031
-      protocol: UDP
-    - name: kms-40032
-      port: 40032
-      targetPort: 40032
-      protocol: UDP
-    - name: kms-40033
-      port: 40033
-      targetPort: 40033
-      protocol: UDP
-    - name: kms-40034
-      port: 40034
-      targetPort: 40034
-      protocol: UDP
-    - name: kms-40035
-      port: 40035
-      targetPort: 40035
-      protocol: UDP
-    - name: kms-40036
-      port: 40036
-      targetPort: 40036
-      protocol: UDP
-    - name: kms-40037
-      port: 40037
-      targetPort: 40037
-      protocol: UDP
-    - name: kms-40038
-      port: 40038
-      targetPort: 40038
-      protocol: UDP
-    - name: kms-40039
-      port: 40039
-      targetPort: 40039
-      protocol: UDP
-    - name: kms-40040
-      port: 40040
-      targetPort: 40040
-      protocol: UDP
-    - name: kms-40041
-      port: 40041
-      targetPort: 40041
-      protocol: UDP
-    - name: kms-40042
-      port: 40042
-      targetPort: 40042
-      protocol: UDP
-    - name: kms-40043
-      port: 40043
-      targetPort: 40043
-      protocol: UDP
-    - name: kms-40044
-      port: 40044
-      targetPort: 40044
-      protocol: UDP
-    - name: kms-40045
-      port: 40045
-      targetPort: 40045
-      protocol: UDP
-    - name: kms-40046
-      port: 40046
-      targetPort: 40046
-      protocol: UDP
-    - name: kms-40047
-      port: 40047
-      targetPort: 40047
-      protocol: UDP
-    - name: kms-40048
-      port: 40048
-      targetPort: 40048
-      protocol: UDP
-    - name: kms-40049
-      port: 40049
-      targetPort: 40049
-      protocol: UDP
-    - name: kms-40050
-      port: 40050
-      targetPort: 40050
-      protocol: UDP
-    - name: kms-40051
-      port: 40051
-      targetPort: 40051
-      protocol: UDP
-    - name: kms-40052
-      port: 40052
-      targetPort: 40052
-      protocol: UDP
-    - name: kms-40053
-      port: 40053
-      targetPort: 40053
-      protocol: UDP
-    - name: kms-40054
-      port: 40054
-      targetPort: 40054
-      protocol: UDP
-    - name: kms-40055
-      port: 40055
-      targetPort: 40055
-      protocol: UDP
-    - name: kms-40056
-      port: 40056
-      targetPort: 40056
-      protocol: UDP
-    - name: kms-40057
-      port: 40057
-      targetPort: 40057
-      protocol: UDP
-    - name: kms-40058
-      port: 40058
-      targetPort: 40058
-      protocol: UDP
-    - name: kms-40059
-      port: 40059
-      targetPort: 40059
-      protocol: UDP
-    - name: kms-40060
-      port: 40060
-      targetPort: 40060
-      protocol: UDP
-    - name: kms-40061
-      port: 40061
-      targetPort: 40061
-      protocol: UDP
-    - name: kms-40062
-      port: 40062
-      targetPort: 40062
-      protocol: UDP
-    - name: kms-40063
-      port: 40063
-      targetPort: 40063
-      protocol: UDP
-    - name: kms-40064
-      port: 40064
-      targetPort: 40064
-      protocol: UDP
-    - name: kms-40065
-      port: 40065
-      targetPort: 40065
-      protocol: UDP
-    - name: kms-40066
-      port: 40066
-      targetPort: 40066
-      protocol: UDP
-    - name: kms-40067
-      port: 40067
-      targetPort: 40067
-      protocol: UDP
-    - name: kms-40068
-      port: 40068
-      targetPort: 40068
-      protocol: UDP
-    - name: kms-40069
-      port: 40069
-      targetPort: 40069
-      protocol: UDP
-    - name: kms-40070
-      port: 40070
-      targetPort: 40070
-      protocol: UDP
-    - name: kms-40071
-      port: 40071
-      targetPort: 40071
-      protocol: UDP
-    - name: kms-40072
-      port: 40072
-      targetPort: 40072
-      protocol: UDP
-    - name: kms-40073
-      port: 40073
-      targetPort: 40073
-      protocol: UDP
-    - name: kms-40074
-      port: 40074
-      targetPort: 40074
-      protocol: UDP
-    - name: kms-40075
-      port: 40075
-      targetPort: 40075
-      protocol: UDP
-    - name: kms-40076
-      port: 40076
-      targetPort: 40076
-      protocol: UDP
-    - name: kms-40077
-      port: 40077
-      targetPort: 40077
-      protocol: UDP
-    - name: kms-40078
-      port: 40078
-      targetPort: 40078
-      protocol: UDP
-    - name: kms-40079
-      port: 40079
-      targetPort: 40079
-      protocol: UDP
-    - name: kms-40080
-      port: 40080
-      targetPort: 40080
-      protocol: UDP
-    - name: kms-40081
-      port: 40081
-      targetPort: 40081
-      protocol: UDP
-    - name: kms-40082
-      port: 40082
-      targetPort: 40082
-      protocol: UDP
-    - name: kms-40083
-      port: 40083
-      targetPort: 40083
-      protocol: UDP
-    - name: kms-40084
-      port: 40084
-      targetPort: 40084
-      protocol: UDP
-    - name: kms-40085
-      port: 40085
-      targetPort: 40085
-      protocol: UDP
-    - name: kms-40086
-      port: 40086
-      targetPort: 40086
-      protocol: UDP
-    - name: kms-40087
-      port: 40087
-      targetPort: 40087
-      protocol: UDP
-    - name: kms-40088
-      port: 40088
-      targetPort: 40088
-      protocol: UDP
-    - name: kms-40089
-      port: 40089
-      targetPort: 40089
-      protocol: UDP
-    - name: kms-40090
-      port: 40090
-      targetPort: 40090
-      protocol: UDP
-    - name: kms-40091
-      port: 40091
-      targetPort: 40091
-      protocol: UDP
-    - name: kms-40092
-      port: 40092
-      targetPort: 40092
-      protocol: UDP
-    - name: kms-40093
-      port: 40093
-      targetPort: 40093
-      protocol: UDP
-    - name: kms-40094
-      port: 40094
-      targetPort: 40094
-      protocol: UDP
-    - name: kms-40095
-      port: 40095
-      targetPort: 40095
-      protocol: UDP
-    - name: kms-40096
-      port: 40096
-      targetPort: 40096
-      protocol: UDP
-    - name: kms-40097
-      port: 40097
-      targetPort: 40097
-      protocol: UDP
-    - name: kms-40098
-      port: 40098
-      targetPort: 40098
-      protocol: UDP
-    - name: kms-40099
-      port: 40099
-      targetPort: 40099
-      protocol: UDP
-    - name: kms-40100
-      port: 40100
-      targetPort: 40100
-      protocol: UDP
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: openvidu-server-loadbalancer
+# spec:
+#   type: LoadBalancer
+#   selector:
+#     app: openvidu-server
+#   ports:
+#     - name: openvidu-https
+#       protocol: TCP
+#       port: 443
+#       targetPort: 5443
+#     - name: coturn-udp
+#       port: 3478
+#       targetPort: 3478
+#       protocol: UDP
+#     - name: coturn-tcp
+#       port: 3478
+#       targetPort: 3478
+#       protocol: TCP 
+#     - name: kms-40000
+#       port: 40000
+#       targetPort: 40000
+#       protocol: UDP
+#     - name: kms-40001
+#       port: 40001
+#       targetPort: 40001
+#       protocol: UDP
+#     - name: kms-40002
+#       port: 40002
+#       targetPort: 40002
+#       protocol: UDP
+#     - name: kms-40003
+#       port: 40003
+#       targetPort: 40003
+#       protocol: UDP
+#     - name: kms-40004
+#       port: 40004
+#       targetPort: 40004
+#       protocol: UDP
+#     - name: kms-40005
+#       port: 40005
+#       targetPort: 40005
+#       protocol: UDP
+#     - name: kms-40006
+#       port: 40006
+#       targetPort: 40006
+#       protocol: UDP
+#     - name: kms-40007
+#       port: 40007
+#       targetPort: 40007
+#       protocol: UDP
+#     - name: kms-40008
+#       port: 40008
+#       targetPort: 40008
+#       protocol: UDP
+#     - name: kms-40009
+#       port: 40009
+#       targetPort: 40009
+#       protocol: UDP
+#     - name: kms-40010
+#       port: 40010
+#       targetPort: 40010
+#       protocol: UDP
+#     - name: kms-40011
+#       port: 40011
+#       targetPort: 40011
+#       protocol: UDP
+#     - name: kms-40012
+#       port: 40012
+#       targetPort: 40012
+#       protocol: UDP
+#     - name: kms-40013
+#       port: 40013
+#       targetPort: 40013
+#       protocol: UDP
+#     - name: kms-40014
+#       port: 40014
+#       targetPort: 40014
+#       protocol: UDP
+#     - name: kms-40015
+#       port: 40015
+#       targetPort: 40015
+#       protocol: UDP
+#     - name: kms-40016
+#       port: 40016
+#       targetPort: 40016
+#       protocol: UDP
+#     - name: kms-40017
+#       port: 40017
+#       targetPort: 40017
+#       protocol: UDP
+#     - name: kms-40018
+#       port: 40018
+#       targetPort: 40018
+#       protocol: UDP
+#     - name: kms-40019
+#       port: 40019
+#       targetPort: 40019
+#       protocol: UDP
+#     - name: kms-40020
+#       port: 40020
+#       targetPort: 40020
+#       protocol: UDP
+#     - name: kms-40021
+#       port: 40021
+#       targetPort: 40021
+#       protocol: UDP
+#     - name: kms-40022
+#       port: 40022
+#       targetPort: 40022
+#       protocol: UDP
+#     - name: kms-40023
+#       port: 40023
+#       targetPort: 40023
+#       protocol: UDP
+#     - name: kms-40024
+#       port: 40024
+#       targetPort: 40024
+#       protocol: UDP
+#     - name: kms-40025
+#       port: 40025
+#       targetPort: 40025
+#       protocol: UDP
+#     - name: kms-40026
+#       port: 40026
+#       targetPort: 40026
+#       protocol: UDP
+#     - name: kms-40027
+#       port: 40027
+#       targetPort: 40027
+#       protocol: UDP
+#     - name: kms-40028
+#       port: 40028
+#       targetPort: 40028
+#       protocol: UDP
+#     - name: kms-40029
+#       port: 40029
+#       targetPort: 40029
+#       protocol: UDP
+#     - name: kms-40030
+#       port: 40030
+#       targetPort: 40030
+#       protocol: UDP
+#     - name: kms-40031
+#       port: 40031
+#       targetPort: 40031
+#       protocol: UDP
+#     - name: kms-40032
+#       port: 40032
+#       targetPort: 40032
+#       protocol: UDP
+#     - name: kms-40033
+#       port: 40033
+#       targetPort: 40033
+#       protocol: UDP
+#     - name: kms-40034
+#       port: 40034
+#       targetPort: 40034
+#       protocol: UDP
+#     - name: kms-40035
+#       port: 40035
+#       targetPort: 40035
+#       protocol: UDP
+#     - name: kms-40036
+#       port: 40036
+#       targetPort: 40036
+#       protocol: UDP
+#     - name: kms-40037
+#       port: 40037
+#       targetPort: 40037
+#       protocol: UDP
+#     - name: kms-40038
+#       port: 40038
+#       targetPort: 40038
+#       protocol: UDP
+#     - name: kms-40039
+#       port: 40039
+#       targetPort: 40039
+#       protocol: UDP
+#     - name: kms-40040
+#       port: 40040
+#       targetPort: 40040
+#       protocol: UDP
+#     - name: kms-40041
+#       port: 40041
+#       targetPort: 40041
+#       protocol: UDP
+#     - name: kms-40042
+#       port: 40042
+#       targetPort: 40042
+#       protocol: UDP
+#     - name: kms-40043
+#       port: 40043
+#       targetPort: 40043
+#       protocol: UDP
+#     - name: kms-40044
+#       port: 40044
+#       targetPort: 40044
+#       protocol: UDP
+#     - name: kms-40045
+#       port: 40045
+#       targetPort: 40045
+#       protocol: UDP
+#     - name: kms-40046
+#       port: 40046
+#       targetPort: 40046
+#       protocol: UDP
+#     - name: kms-40047
+#       port: 40047
+#       targetPort: 40047
+#       protocol: UDP
+#     - name: kms-40048
+#       port: 40048
+#       targetPort: 40048
+#       protocol: UDP
+#     - name: kms-40049
+#       port: 40049
+#       targetPort: 40049
+#       protocol: UDP
+#     - name: kms-40050
+#       port: 40050
+#       targetPort: 40050
+#       protocol: UDP
+#     - name: kms-40051
+#       port: 40051
+#       targetPort: 40051
+#       protocol: UDP
+#     - name: kms-40052
+#       port: 40052
+#       targetPort: 40052
+#       protocol: UDP
+#     - name: kms-40053
+#       port: 40053
+#       targetPort: 40053
+#       protocol: UDP
+#     - name: kms-40054
+#       port: 40054
+#       targetPort: 40054
+#       protocol: UDP
+#     - name: kms-40055
+#       port: 40055
+#       targetPort: 40055
+#       protocol: UDP
+#     - name: kms-40056
+#       port: 40056
+#       targetPort: 40056
+#       protocol: UDP
+#     - name: kms-40057
+#       port: 40057
+#       targetPort: 40057
+#       protocol: UDP
+#     - name: kms-40058
+#       port: 40058
+#       targetPort: 40058
+#       protocol: UDP
+#     - name: kms-40059
+#       port: 40059
+#       targetPort: 40059
+#       protocol: UDP
+#     - name: kms-40060
+#       port: 40060
+#       targetPort: 40060
+#       protocol: UDP
+#     - name: kms-40061
+#       port: 40061
+#       targetPort: 40061
+#       protocol: UDP
+#     - name: kms-40062
+#       port: 40062
+#       targetPort: 40062
+#       protocol: UDP
+#     - name: kms-40063
+#       port: 40063
+#       targetPort: 40063
+#       protocol: UDP
+#     - name: kms-40064
+#       port: 40064
+#       targetPort: 40064
+#       protocol: UDP
+#     - name: kms-40065
+#       port: 40065
+#       targetPort: 40065
+#       protocol: UDP
+#     - name: kms-40066
+#       port: 40066
+#       targetPort: 40066
+#       protocol: UDP
+#     - name: kms-40067
+#       port: 40067
+#       targetPort: 40067
+#       protocol: UDP
+#     - name: kms-40068
+#       port: 40068
+#       targetPort: 40068
+#       protocol: UDP
+#     - name: kms-40069
+#       port: 40069
+#       targetPort: 40069
+#       protocol: UDP
+#     - name: kms-40070
+#       port: 40070
+#       targetPort: 40070
+#       protocol: UDP
+#     - name: kms-40071
+#       port: 40071
+#       targetPort: 40071
+#       protocol: UDP
+#     - name: kms-40072
+#       port: 40072
+#       targetPort: 40072
+#       protocol: UDP
+#     - name: kms-40073
+#       port: 40073
+#       targetPort: 40073
+#       protocol: UDP
+#     - name: kms-40074
+#       port: 40074
+#       targetPort: 40074
+#       protocol: UDP
+#     - name: kms-40075
+#       port: 40075
+#       targetPort: 40075
+#       protocol: UDP
+#     - name: kms-40076
+#       port: 40076
+#       targetPort: 40076
+#       protocol: UDP
+#     - name: kms-40077
+#       port: 40077
+#       targetPort: 40077
+#       protocol: UDP
+#     - name: kms-40078
+#       port: 40078
+#       targetPort: 40078
+#       protocol: UDP
+#     - name: kms-40079
+#       port: 40079
+#       targetPort: 40079
+#       protocol: UDP
+#     - name: kms-40080
+#       port: 40080
+#       targetPort: 40080
+#       protocol: UDP
+#     - name: kms-40081
+#       port: 40081
+#       targetPort: 40081
+#       protocol: UDP
+#     - name: kms-40082
+#       port: 40082
+#       targetPort: 40082
+#       protocol: UDP
+#     - name: kms-40083
+#       port: 40083
+#       targetPort: 40083
+#       protocol: UDP
+#     - name: kms-40084
+#       port: 40084
+#       targetPort: 40084
+#       protocol: UDP
+#     - name: kms-40085
+#       port: 40085
+#       targetPort: 40085
+#       protocol: UDP
+#     - name: kms-40086
+#       port: 40086
+#       targetPort: 40086
+#       protocol: UDP
+#     - name: kms-40087
+#       port: 40087
+#       targetPort: 40087
+#       protocol: UDP
+#     - name: kms-40088
+#       port: 40088
+#       targetPort: 40088
+#       protocol: UDP
+#     - name: kms-40089
+#       port: 40089
+#       targetPort: 40089
+#       protocol: UDP
+#     - name: kms-40090
+#       port: 40090
+#       targetPort: 40090
+#       protocol: UDP
+#     - name: kms-40091
+#       port: 40091
+#       targetPort: 40091
+#       protocol: UDP
+#     - name: kms-40092
+#       port: 40092
+#       targetPort: 40092
+#       protocol: UDP
+#     - name: kms-40093
+#       port: 40093
+#       targetPort: 40093
+#       protocol: UDP
+#     - name: kms-40094
+#       port: 40094
+#       targetPort: 40094
+#       protocol: UDP
+#     - name: kms-40095
+#       port: 40095
+#       targetPort: 40095
+#       protocol: UDP
+#     - name: kms-40096
+#       port: 40096
+#       targetPort: 40096
+#       protocol: UDP
+#     - name: kms-40097
+#       port: 40097
+#       targetPort: 40097
+#       protocol: UDP
+#     - name: kms-40098
+#       port: 40098
+#       targetPort: 40098
+#       protocol: UDP
+#     - name: kms-40099
+#       port: 40099
+#       targetPort: 40099
+#       protocol: UDP
+#     - name: kms-40100
+#       port: 40100
+#       targetPort: 40100
+#       protocol: UDP

@@ -21,4 +21,4 @@ spec:
               service:
                 name: openvidu-server-internal
                 port:
-                  number: 5443
+                  number: 443
