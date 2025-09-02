@@ -5,3 +5,4 @@ resources:
   - 02-backend-ingress.yaml
   - 03-frontend-ingress.yaml
   - 04-backend-dev-ingress.yaml
+  - 05-grafana-ingress.yaml
