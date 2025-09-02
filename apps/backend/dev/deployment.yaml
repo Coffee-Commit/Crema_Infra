@@ -11,10 +11,6 @@ spec:
     metadata:
       labels:
         app: backend-dev
-      annotations:
-        prometheus.io/scrape: 'true'
-        prometheus.io/port: '9090'
-        prometheus.io/path: '/actuator/prometheus'
     spec:
       nodeSelector:
         disktype: application

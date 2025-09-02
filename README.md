@@ -13,3 +13,8 @@
 ### 아키텍처 다이어그램 (완성본 아님 - 지속 수정 중)
 ![Architecture Diagram](https://github.com/user-attachments/assets/e65e427f-cfc5-4e4d-8b65-e8a818f2e9a0)
 ---
+
+
+helm upgrade prometheus prometheus-community/kube-prometheus-stack \
+--namespace monitoring \
+-f grafana-values.yaml
