@@ -5,7 +5,6 @@ metadata:
   namespace: default
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
@@ -19,8 +18,15 @@ spec:
             name: frontend-service
             port:
               number: 80
-      - path: /be(/|$)(.*)
-        pathType: ImplementationSpecific
+      - path: /be
+        pathType: Prefix
+        backend:
+          service:
+            name: backend-service
+            port:
+              number: 80
+      - path: /be/
+        pathType: Prefix
         backend:
           service:
             name: backend-service
