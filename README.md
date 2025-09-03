@@ -1,7 +1,7 @@
 # [CREMA] 커피챗 플랫폼
 <div align="center">
     <div>
-        <img src="img/mainHero.webp" 
+        <img src="docs/img/mainHero.webp" 
         alt="Main Image" width="300" height= "300">
     </div>
 </div>
