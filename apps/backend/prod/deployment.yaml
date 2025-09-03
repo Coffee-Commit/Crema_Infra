@@ -20,7 +20,7 @@ spec:
         disktype: application
       containers:
       - name: backend
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:3c79817
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-backend:74df9cb
         ports:
         - containerPort: 8080
         - containerPort: 9090
