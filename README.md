@@ -4,12 +4,8 @@
         <img src="img/mainHero.webp" 
         alt="Main Image" width="300" height= "300">
     </div>
-    <div>
-        <a href="https://coffeechat.kro.kr">
-            <img src="https://myhits.vercel.app/api/hit/https%3A%2F%2Fgithub.com%2FCoffee-Commit?color=green&label= Crema &size=small" alt=" Crema " />
-        </a>
-    </div>
 </div>
+[![Crema Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FCoffee-Commit&count_bg=%232E9F4A&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Crema&edge_flat=false)](https://github.com/Coffee-Commit)
 
 
 # 🚀 목차
