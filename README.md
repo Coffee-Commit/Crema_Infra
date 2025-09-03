@@ -3,7 +3,7 @@
     <img src="img/mainHero.webp" 
         alt="Main Image" width="300" height= "300">
 </div>
-![hits](https://hits.seeyou.design/plant/count/오늘의%20방문자수?style=flat)
+[![crema](https://myhits.vercel.app/api/hit/https%3A%2F%2Fgithub.com%2FCoffee-Commit?color=green&label=crema&size=small)](https://myhits.vercel.app)
 
 ## 🚀 목차
 - [개요](#개요)
