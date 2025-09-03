@@ -6,9 +6,7 @@
     </div>
 </div>
 
-[![HitCount](https://hits.dwyl.com/crema/https://githubcom/Coffee-Commit.svg?style=flat-square)](http://hits.dwyl.com/crema/https://githubcom/Coffee-Commit)
-
-![visitors](https://visitor-badge.io/badge?page_id=Coffee-Commit.Crema&left_color=gray&right_color=green)
+![hits](https://visitor-badge.glitch.me/badge?page_id=Coffee-Commit.Crema_Infra)
 
 # 🚀 목차
 - [프로젝트 소개](#프로젝트-소개)
