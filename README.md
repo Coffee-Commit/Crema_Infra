@@ -1,6 +1,21 @@
-# [CREMA] Infrastructure
+# [CREMA]
 
-이 문서는 [CREMA]의 인프라 구성과 운영 방법을 안내합니다.
+이 문서는 [CREMA]의 소개와 설치 및 실행 방법에 대해 안내합니다.
+
+
+## 🚀 목차
+- [개요](#개요)
+- [프로젝트 소개](#ㄹㄹ)
+- [설치 방법](#설치-방법)
+
+## 개요
+---
+- 프로젝트 이름: 
+- 프로젝트 기간: 2025.08.11 ~ 2025.09.15 (35일)
+- 개발
+- 멤버
+
+프로젝트 기간 : 8/11 ~ 9/15
 
 ## 📜 개요 (Overview)
 
@@ -10,11 +25,10 @@
 - **Orchestration**: `Kubernetes`
 - **CI/CD**: `Jenkins` / `ArgoCD`
 
-### 아키텍처 다이어그램 (완성본 아님 - 지속 수정 중)
-![Architecture Diagram](https://github.com/user-attachments/assets/e65e427f-cfc5-4e4d-8b65-e8a818f2e9a0)
+### 아키텍처 다이어그램
+![Architecture Diagram](img/system%20architecture.jpeg)
 ---
 
 
-helm upgrade prometheus prometheus-community/kube-prometheus-stack \
---namespace monitoring \
--f grafana-values.yaml
+
+## 설치 방법
