@@ -8,10 +8,10 @@
 
 
 # 🚀 목차
-- [프로젝트 소개](#프로젝트-소개)
+- [📌 프로젝트 소개](#프로젝트-소개)
   - [개요](#개요)
   - [주요 기능](#주요-기능)
-  - [개발 기간 및 팀원](#개발-기간-및-팀원)
+  - [팀원](#팀원)
   
 - [🎨 화면 구성](#화면-구성)
   - [데모 영상](#데모-영상)
@@ -20,6 +20,8 @@
 - [🛠️ 기술 스택](#기술-스택)
 
 - [💡 아키텍처](#아키텍처)
+
+- [💥 Challenges & Troubleshooting](#challenges--troubleshooting)
   
 - [🚦 시작 가이드](#시작-가이드)
 
@@ -37,8 +39,89 @@
 
 ## 주요 기능
 - 주요 기능
-## 개발 기간 및 팀원
-- 개발 기간 및 팀원
+
+## 멤버
+<div align="center">
+    <table style="width:100%; border:none;">
+        <tr style="border:none;">
+            <td align="center" style="border:none;">
+                <a href="https://github.com/Coffee-Commit" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/225826661?s=200&v=4" alt="김민지" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>김민지</b>
+                    <br />
+                    <samp>Product Management</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/hyakki54" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/132263433?v=4" alt="김선민" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>김선민</b>
+                    <br />
+                    <samp>Product Designer</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/H0D0D0" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/191853420?v=4" alt="멤버3 이름" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>윤하정</b>
+                    <br />
+                    <samp>Product Designer</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/yg5057" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/120440647?v=4" alt="조연경" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>조연경</b>
+                    <br />
+                    <samp>FrontEnd</samp>
+                </a>
+            </td>
+        </tr>
+        <tr style="border:none;">
+            <td align="center" style="border:none;">
+                <a href="https://github.com/jam9582" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/100444769?v=4" alt="권재은" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>권재은</b>
+                    <br />
+                    <samp>BackEnd</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/Roysung0625" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/50332234?v=4" alt="성정현" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>성정현</b>
+                    <br />
+                    <samp>BackEnd</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/BDOR665" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/165445587?v=4" alt="장윤영" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>장윤영</b>
+                    <br />
+                    <samp>BackEnd</samp>
+                </a>
+            </td>
+            <td align="center" style="border:none;">
+                <a href="https://github.com/csyhorizon" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/u/20658149?v=4" alt="최수용" width="100px" height="100px" style="border-radius:50%; margin-bottom: 10px;">
+                    <br />
+                    <b>최수용</b>
+                    <br />
+                    <samp>Infra & DevOps</samp>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
 ---
 # 화면 구성
 ## 데모 영상
@@ -105,7 +188,10 @@
 
 ---
 
+## Challenges & Troubleshooting
+test
 
+---
 
 ## 시작 가이드
 ```
