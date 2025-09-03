@@ -6,8 +6,9 @@
     </div>
 </div>
 
-[![Crema Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FCoffee-Commit&count_bg=%232E9F4A&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Crema&edge_flat=false)](https://github.com/Coffee-Commit)
+[![HitCount](https://hits.dwyl.com/crema/https://githubcom/Coffee-Commit.svg?style=flat-square)](http://hits.dwyl.com/crema/https://githubcom/Coffee-Commit)
 
+![visitors](https://visitor-badge.io/badge?page_id=Coffee-Commit.Crema&left_color=gray&right_color=green)
 
 # 🚀 목차
 - [프로젝트 소개](#프로젝트-소개)
