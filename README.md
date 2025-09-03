@@ -1,7 +1,9 @@
 # [CREMA]
-
-이 문서는 [CREMA]의 소개와 설치 및 실행 방법에 대해 안내합니다.
-
+<div align="center">
+    <img src="img/mainHero.webp" 
+        alt="Main Image" width="300" height= "300">
+</div>
+![hits](https://hits.seeyou.design/plant/count/오늘의%20방문자수?style=flat)
 
 ## 🚀 목차
 - [개요](#개요)
@@ -26,7 +28,7 @@
 - **CI/CD**: `Jenkins` / `ArgoCD`
 
 ### 아키텍처 다이어그램
-![Architecture Diagram](img/system%20architecture.jpeg)
+![Architecture Diagram](img/system_architecture.png)
 ---
 
 
