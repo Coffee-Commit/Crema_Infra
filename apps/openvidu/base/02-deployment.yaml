@@ -33,11 +33,7 @@ spec:
             - name: COTURN_RELAY_IP
               valueFrom:
                 fieldRef:
-                  fieldPath: status.hostIP
-            - name: OPENVIDU_PUBLICURL
-              value: "https://openvidu-coffeechat.kro.kr"
-            - name: JAVA_PROPERTIES
-              value: "-Dserver.ssl.enabled=true -Dserver.ssl.key-store=/etc/openvidu/certs/tls.key -Dserver.ssl.certificate=/etc/openvidu/certs/tls.crt"
+                  fieldPath: status.hostIP\
           volumeMounts:
             - name: docker-sock
               mountPath: /var/run/docker.sock
@@ -47,7 +43,12 @@ spec:
               mountPath: /.env
               subPath: .env
             - name: openvidu-certs
-              mountPath: /etc/openvidu/certs
+              mountPath: /opt/openvidu/owncert/certificate.key
+              subPath: tls.key
+              readOnly: true
+            - name: openvidu-certs
+              mountPath: /opt/openvidu/owncert/certificate.pem
+              subPath: tls.crt
               readOnly: true
       volumes:
         - name: docker-sock
