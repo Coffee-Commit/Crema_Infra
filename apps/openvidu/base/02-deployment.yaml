@@ -34,6 +34,8 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: status.hostIP
+            - name: OPENVIDU_PUBLICURL
+              value: "https://openvidu-coffeechat.kro.kr"
           volumeMounts:
             - name: docker-sock
               mountPath: /var/run/docker.sock
