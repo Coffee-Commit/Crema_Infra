@@ -5,6 +5,7 @@ metadata:
 data:
   .env: |
     CERTIFICATE_TYPE=owncert
+    LOGGING_LEVEL_IO_OPENVIDU_SERVER=WARN
     DOMAIN_OR_PUBLIC_IP=openvidu-coffeechat.kro.kr
     OPENVIDU_DOMAIN_OR_PUBLIC_IP=openvidu-coffeechat.kro.kr
     OPENVIDU_PUBLICURL=https://openvidu-coffeechat.kro.kr

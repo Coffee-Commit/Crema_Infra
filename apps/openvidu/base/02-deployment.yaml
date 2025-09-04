@@ -33,7 +33,7 @@ spec:
             - name: COTURN_RELAY_IP
               valueFrom:
                 fieldRef:
-                  fieldPath: status.hostIP\
+                  fieldPath: status.hostIP
           volumeMounts:
             - name: docker-sock
               mountPath: /var/run/docker.sock
