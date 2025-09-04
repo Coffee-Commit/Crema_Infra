@@ -23,7 +23,7 @@ spec:
           image: openvidu/openvidu-server-kms:2.23.0
           ports:
             - containerPort: 443
-              name: http
+              name: https
           envFrom:
             - secretRef:
                 name: openvidu-env-secret
