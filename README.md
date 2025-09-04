@@ -262,7 +262,6 @@ KAKAO_CLIENT_SECRET={OAUTH_GOOGLE_CLIENT_SECRET}
 
 # Jwt Key
 JWT_KEY={JWT_KEY}
-
 ```
 
 #### B. Docker Image 생성
