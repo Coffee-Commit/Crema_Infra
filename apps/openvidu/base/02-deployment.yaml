@@ -20,7 +20,7 @@ spec:
         disktype: video-processing
       containers:
         - name: openvidu-server
-          image: openvidu/openvidu-server-kms:2.23.0
+          image: openvidu/openvidu-dev:2.30.0
           ports:
             - containerPort: 443
               name: https
