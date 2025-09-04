@@ -7,6 +7,7 @@ data:
     CERTIFICATE_TYPE=owncert
     OPENVIDU_CERTIFICATE_KEY=/etc/openvidu/certs/tls.key
     OPENVIDU_CERTIFICATE_CERTIFICATE=/etc/openvidu/certs/tls.crt
+    JAVA_PROPERTIES=-Dserver.ssl.enabled=true -Dserver.ssl.key-store=/etc/openvidu/certs/tls.key -Dserver.ssl.certificate=/etc/openvidu/certs/tls.crt
     LOGGING_LEVEL_IO_OPENVIDU_SERVER=WARN
     DOMAIN_OR_PUBLIC_IP=openvidu-coffeechat.kro.kr
     OPENVIDU_DOMAIN_OR_PUBLIC_IP=openvidu-coffeechat.kro.kr
