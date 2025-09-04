@@ -21,13 +21,6 @@ spec:
       containers:
         - name: openvidu-server
           image: openvidu/openvidu-server-kms:2.23.0
-          command: ["java"]
-          args:
-            - "-Dserver.ssl.enabled=true"
-            - "-Dserver.ssl.key-store=/etc/openvidu/certs/tls.key"
-            - "-Dserver.ssl.certificate=/etc/openvidu/certs/tls.crt"
-            - "-jar"
-            - "/openvidu-server.jar"
           ports:
             - containerPort: 443
               name: https
@@ -43,6 +36,8 @@ spec:
                   fieldPath: status.hostIP
             - name: OPENVIDU_PUBLICURL
               value: "https://openvidu-coffeechat.kro.kr"
+            - name: JAVA_PROPERTIES
+              value: "-Dserver.ssl.enabled=true -Dserver.ssl.key-store=/etc/openvidu/certs/tls.key -Dserver.ssl.certificate=/etc/openvidu/certs/tls.crt"
           volumeMounts:
             - name: docker-sock
               mountPath: /var/run/docker.sock
