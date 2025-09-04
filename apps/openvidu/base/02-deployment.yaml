@@ -42,6 +42,9 @@ spec:
             - name: openvidu-env-file
               mountPath: /.env
               subPath: .env
+            - name: openvidu-certs
+              mountPath: /etc/openvidu/certs
+              readOnly: true
       volumes:
         - name: docker-sock
           hostPath:
@@ -53,3 +56,6 @@ spec:
         - name: openvidu-env-file
           configMap:
             name: openvidu-env-config
+        - name: openvidu-certs
+          secret:
+            secretName: openvidu-tls-secret
