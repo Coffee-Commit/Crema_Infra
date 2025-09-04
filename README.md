@@ -11,7 +11,7 @@
 - [📌 프로젝트 소개](#프로젝트-소개)
   - [개요](#개요)
   - [주요 기능](#주요-기능)
-  - [팀원](#팀원)
+  - [멤버](#멤버)
   
 - [🎨 화면 구성](#화면-구성)
   - [데모 영상](#데모-영상)
@@ -21,24 +21,52 @@
 
 - [💡 아키텍처](#아키텍처)
 
+- [🗂️ ERD Diagram](#ERD-Diagram)
+
 - [💥 Challenges & Troubleshooting](#challenges--troubleshooting)
   
 - [🚦 시작 가이드](#시작-가이드)
 
-- [🌐 API 문서 보기](#api-문서-보기)
+- [🌐 문서 보기](#문서-목록)
 
 ---
 
+<br><br><br>
+
 # 프로젝트 소개
+### "Cream는 취업 준비 과정에서 현직자와 구직자를 부담 없이 연결할 수 있는 1:1 커피챗 서비스"
 ## 개요
-- 프로젝트 이름: Crema (크레마) - 커피챗 플랫폼
-- 프로젝트 목적 / 문제 정의
-- 프로젝트 기간: 2025.08.11 ~ 2025.09.15 (35일)
+- ### 프로젝트 이름: Crema (크레마) - 커피챗 플랫폼
+- ### 문제 정의
+  - "주니어 멘토는 자신의 경험이 과연 누군가에게 도움이 될 만큼 가치 있는지에 대한 불안 때문에 참여를 주저"
+  - "취업, 이직을 준비하는 사람들은 현직자의 경험과 맥락적 정보를 원함"
+  - "장기 네트워킹, 오프라인 모임은 시간, 비용, 심리적 부담이 커서 참여 장벽이 높음"
+- ### 프로젝트 목적
+  - 주니어 멘토가 부담 없이 대화할 수 있도록, 크레마는 '멘토링'이 아닌 '커피챗'으로 포지셔닝
+  - 화상, 음성, 채팅, 자료공유 등 자유롭게 이야기할 수 있는 환경 제공
+  - 짧고 부담 없는 '1:1 온라인 커피챗 경험'을 통해 멘토, 멘티 모두의 진입 장벽을 낮춤
+  - '예약, 화상채팅, 일정 관리' 기능을 통합하여 원스톱 커리어 네트워킹 서비스 구축
+- ### 프로젝트 기간: 2025.08.11 ~ 2025.09.15 (35일)
   ![Developer Day #1](docs/img/calendar1.png)
   ![Developer Day #2](docs/img/calendar2.png)
 
 ## 주요 기능
-- 주요 기능
+- ### 로그인 / 회원가입 
+  - OAuth2(Google, Kakao)를 통한 간편 로그인
+- ### 예약 기능
+  - 멘토/멘티 간 커피챗 일정 예약 및 관리
+- ### 화상 채팅
+  - OpenVidu 라이브러리를 활용한 실시간 1:1 화상 대화
+- ### 실시간 알림
+  - SSE(Server-Sent Events)를 통한 예약/채팅 알림 제공
+- ### 마이페이지
+  - 예약 내역, 진행 예정 커피챗, 알림 기록 확인
+- ### 멘토/멘티 프로필
+  - 멘토의 전문 분야, 경력, 관심사 공개 및 검색 가능
+- ### 후기/피드백
+  - 커피챗 종료 후 간단한 후기 작성 기능
+
+<br><br><br>
 
 ## 멤버
 <div align="center">
@@ -123,28 +151,27 @@
 </div>
 
 ---
+
+<br><br><br>
+
 # 화면 구성
 ## 데모 영상
-- 데모 영상
+- 아직 없음
 ## 스크린샷
-- 스크린샷
+- 아직 없음
 ---
+
+<br><br><br>
+
 ## 기술 스택
 ### 🖥️ FrontEnd
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 
 ### 🔧 BackEnd
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
 
 ### 💾 Database
@@ -159,8 +186,6 @@
 ![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white)
 ![Argo CD](https://img.shields.io/badge/Argo%20CD-FF470F?style=for-the-badge&logo=argocd&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 ### ☁️ Infra
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
@@ -174,24 +199,58 @@
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white)
 
 ### 💬 Communication & Design Tools
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 ![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![CodeRabbit](https://img.shields.io/badge/CodeRabbit-FF6F61?style=for-the-badge&logo=codeproject&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ---
 
-
+<br><br><br>
 
 ## 아키텍처
 ![Architecture Diagram](docs/img/system_architecture.png)
 
 ---
 
-## Challenges & Troubleshooting
-test
+<br><br><br>
+
+## ERD Diagram
+![ERD Diagram](docs/img/erd_diagram.png)
+
+- **회원/사용자 관련**
+  - `멤버(루키) 테이블`: 멘토/멘티 계정 정보 저장
+  - `멤버 직무 테이블`: 멤버별 관심 직무 정보
+- **커피챗/예약 관련**
+  - `예약 테이블`: 멘토와 멘티 간 커피챗 예약 내역
+  - `스케줄 테이블` + `시간 테이블`: 멘토의 가능한 일정 관리
+  - `커피챗 단위시간 테이블`: 시간 단위별 요금/예약 단위
+  - `화상채팅 테이블`: 예약에 대한 화상 채팅 기록
+- **가이드/주제 관련**
+  - `가이드 테이블`: 멘토 가이드 정보
+  - `가이드 직무 테이블`, `가이드 커피챗 주제 중간 테이블`: 가이드별 주제와 직무 매핑
+  - `경험 대주제 테이블`, `경험 소주제 테이블`: 커피챗에서 다루는 경험 주제
+- **커뮤니케이션/부가 기능**
+  - `알림 테이블`: 예약/채팅 알림 기록
+  - `사전질문 테이블`, `사전질문 파일`: 사전 질문과 첨부 파일 관리
+  - `후기 테이블`, `멘티 경험 리뷰 테이블`: 커피챗 후기/피드백
+- **태그/중간 테이블**
+  - `해시태그 테이블`, `멤버 커피챗 중간 테이블`, `커피챗 테이블`: 주제/태그/연관 관계 관리
+
+📄 [ERD 상세 문서 보기](docs/sql_schema.md)
 
 ---
+
+<br><br><br>
+
+## Challenges & Troubleshooting
+- **프론트엔드**: 
+- **백엔드**: 
+- **인프라**: 
+
+📄 [자세한 Troubleshooting 기록 보기](docs/troubleshooting.md)
+
+---
+<br><br><br>
 
 ## 시작 가이드
 ```
@@ -274,5 +333,7 @@ JWT_KEY={JWT_KEY}
 
 ---
 
-## API 문서 보기
+<br><br><br>
+
+## 문서 목록
 📖 [API 문서 보기](https://coffee-commit.github.io/Crema_Infra/html/api-doc.html)
