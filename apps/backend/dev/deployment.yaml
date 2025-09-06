@@ -12,6 +12,7 @@ spec:
       labels:
         app: backend-dev
     spec:
+      serviceAccountName: crema-app-ksa
       nodeSelector:
         disktype: application
       containers:
