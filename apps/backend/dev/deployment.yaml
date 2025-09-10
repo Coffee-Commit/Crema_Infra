@@ -28,8 +28,8 @@ spec:
             name: crema-app-dev-secret
 
       - name: cloud-sql-proxy
-        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:latest
+        image: gcr.io/cloud-sql-connectors/cloud-sql-proxy:2.8.0
         args:
           - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
-          - "--workload-identity"
+          # - "--workload-identity"

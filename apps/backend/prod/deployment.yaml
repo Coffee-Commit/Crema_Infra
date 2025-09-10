@@ -36,4 +36,4 @@ spec:
         args:
           - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
-          - "--auto-iam-authn"
+          # - "--auto-iam-authn"
