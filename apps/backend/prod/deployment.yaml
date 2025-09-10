@@ -36,15 +36,4 @@ spec:
         args:
           - "--private-ip"
           - "coffee-and-commit:asia-northeast3:goorm"
-        volumeMounts:
-        - name: gcp-sa-key
-          mountPath: /secrets/gcp
-          readOnly: true
-        env:
-          - name: GOOGLE_APPLICATION_CREDENTIALS
-            value: /secrets/gcp/key.json
-
-      volumes:
-        - name: gcp-sa-key
-          secret:
-            secretName: gcp-cloudsql-credentials
+          - "--workload-identity"
