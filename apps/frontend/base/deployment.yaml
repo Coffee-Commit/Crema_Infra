@@ -16,7 +16,7 @@ spec:
         disktype: application
       containers:
       - name: frontend
-        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-frontend:3cb1d77
+        image: asia-northeast3-docker.pkg.dev/coffee-and-commit/coffee/crema-frontend:f806fde
         ports:
         - containerPort: 3000
         envFrom:
